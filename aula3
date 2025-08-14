@@ -1,0 +1,166 @@
+print(40*"=", 'calculador de imc', 40*"=")
+altura = float(input("digite a seu altura: ").replace(',', '.'))
+peso = float(input('digite seu peso: ').replace(',', '.'))
+
+#declaração da variável
+número = 10
+ #loop
+while número >= 0:
+     print(número)
+     número -= 1
+
+     cont = 0
+while cont < 10:
+    cont += 1
+    if cont % 2 == 0:
+        print(cont)
+    elif cont >= 7:
+        break
+    else:
+        continue
+print('Contando...')
+
+cont = 0
+while cont < 20:
+    cont += 1
+    if cont % 2 == 0:
+        print(cont)
+    elif cont <= 5:
+        continue
+    elif cont >= 15:
+        break
+    else:
+        continue
+print('Contando...')
+
+while True:
+# menu principal
+    print(40*'-','Sistema Console 2°DS', 40*'-')
+    print('1 - Calculadora IMC')
+    print('2 - Maioridade')
+    print('3 - Calculadora')
+    print('4 - Dados Pessoais')
+    print('5 - Sair')
+
+opcao = input('Digite uma opção: ')
+
+if opcao == '1':
+    pass   
+elif opcao == '2':
+    pass
+elif opcao == '3':
+    pass
+elif opcao == '4':
+    pass
+elif opcao == '5':
+    linha = 15
+    j = 1
+    while j <= linha:
+        espacos = linhas - j
+        estrelas = 2*j - 1
+
+        print(' '* espacos + "^"*estrelas)
+        j += 1
+elif opcao == '6':
+        print(""* + "^"*estrelas)
+        j += 1
+elif opcao == '6':
+    print(""* + "^"*estrelas)
+else:
+    print("Opção inválida.")
+# Loop decrescente
+número = 10
+while número >= 0:
+    print(número)
+    número -= 1
+
+# Loop de contagem até 10, mostrando pares e mensagem
+cont = 0
+while cont < 10:
+    cont += 1
+    if cont % 2 == 0:
+        print(cont)
+    elif cont >= 7:
+        break
+    else:
+        print('Contando...')
+
+# Loop de contagem até 20, mostrando pares
+cont = 0
+while cont < 20:
+    cont += 1
+    if cont % 2 == 0:
+        print(cont)
+    elif cont <= 5:
+        continue
+    elif cont >= 15:
+        break
+    else:
+        print('Contando...')
+
+# Menu principal com calculadora simples
+while True:
+    print(40 * '-', 'Sistema Console 2°DS', 40 * '-')
+    print('1 - Calculadora IMC')
+    print('2 - Maioridade')
+    print('3 - Calculadora')
+    print('4 - Dados Pessoais')
+    print('5 - Sair')
+
+    opcao = input('Digite uma opção: ')
+
+    if opcao == '1':
+        altura = float(input("Digite sua altura: ").replace(',', '.'))
+        peso = float(input('Digite seu peso: ').replace(',', '.'))
+        imc = peso / (altura ** 2)
+        print(f"Seu IMC é: {imc:.2f}")
+    elif opcao == '2':
+        idade = int(input("Digite sua idade: "))
+        if idade >= 18:
+            print("Maior de idade.")
+        else:
+            print("Menor de idade.")
+    elif opcao == '3':
+        while True:
+            print("\nCalculadora Simples")
+            print("a  Soma")
+            print("b  Subtração")
+            print("c  Multiplicação")
+            print("d  Divisão")
+            print("e  Voltar ao menu")
+            escolha = input("Escolha a operação: ").lower()
+            if escolha == 'e':
+                break
+            n1 = float(input("Digite o primeiro número: "))
+            n2 = float(input("Digite o segundo número: "))
+            if escolha == 'a':
+                print(f"Resultado: {n1 + n2}")
+            elif escolha == 'b':
+                print(f"Resultado: {n1 - n2}")
+            elif escolha == 'c':
+                print(f"Resultado: {n1 * n2}")
+            elif escolha == 'd':
+                if n2 != 0:
+                    print(f"Resultado: {n1 / n2}")
+                else:
+                    print("Divisão por zero não permitida.")
+            else:
+                print("Opção inválida.")
+    elif opcao == '4':
+        nome = input("Digite seu nome: ")
+        idade = input("Digite sua idade: ")
+        print(f"Nome: {nome}, Idade: {idade}")
+    elif opcao == '5':
+        print("Saindo do sistema...")
+        break
+    else:
+        print("Opção inválida. Tente novamente.")
+    # variaveisteste.py
+peso_usuario = float(input('Digite o seu peso:').replace(',', '.'))
+peso_carga = float(input('Digite o peso da carga: ').replace(',', '.'))
+peso_total = peso_usuario + peso_carga
+if peso_total >= 200.1:
+    print('Não autorizado')
+else:
+    print('Autorizado')
+    print('Peso transportado:', peso_total)
